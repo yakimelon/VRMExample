@@ -3573,7 +3573,7 @@ Transform:
   m_Father: {fileID: 4193388233464066}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!90 &90014674753510634
+--- !u!90 &90895985163795870
 Avatar:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5482,7 +5482,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710290514273660}
   m_Enabled: 1
-  m_Avatar: {fileID: 90014674753510634}
+  m_Avatar: {fileID: 90895985163795870}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -5492,6 +5492,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114043927296408836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.I
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: I
+  Preset: 3
+  Values:
+  - RelativePath: face
+    Index: 1
+    Weight: 100
+  MaterialValues: []
 --- !u!114 &114059941685128048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5541,7 +5560,7 @@ MonoBehaviour:
   - {fileID: 114152348592352428}
   - {fileID: 114820100926004838}
   - {fileID: 114412845886658622}
---- !u!114 &114090081678978628
+--- !u!114 &114092328008779926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5549,29 +5568,503 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329dca3bf78fcdd42b2df941673db76f, type: 3}
-  m_Name: BlendShape
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.Joy
   m_EditorClassIdentifier: 
-  Clips:
-  - {fileID: 114543254034132296}
-  - {fileID: 114874717345174066}
-  - {fileID: 114366895806981078}
-  - {fileID: 114567296981649494}
-  - {fileID: 114192836682691430}
-  - {fileID: 114227128530280018}
-  - {fileID: 114241617258385158}
-  - {fileID: 114864146647363730}
-  - {fileID: 114132354363610120}
-  - {fileID: 114816110771301266}
-  - {fileID: 114970232362015814}
-  - {fileID: 114600870270135938}
-  - {fileID: 114843156811075690}
-  - {fileID: 114813140200114176}
-  - {fileID: 114946520140672052}
-  - {fileID: 114318975829534482}
-  - {fileID: 114762974826032992}
-  - {fileID: 114395380602519510}
---- !u!114 &114132354363610120
+  m_prefab: {fileID: 0}
+  BlendShapeName: Joy
+  Preset: 8
+  Values:
+  - RelativePath: face
+    Index: 14
+    Weight: 100
+  - RelativePath: face
+    Index: 25
+    Weight: 100
+  - RelativePath: face
+    Index: 38
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114152348592352428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1113134648775654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Colliders:
+  - Offset: {x: 0, y: 0, z: 0}
+    Radius: 0.05
+  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
+--- !u!114 &114182472536299346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.E
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: E
+  Preset: 5
+  Values:
+  - RelativePath: face
+    Index: 3
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114244473061062148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.Blink
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: Blink
+  Preset: 7
+  Values:
+  - RelativePath: face
+    Index: 24
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114246441841755368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.Sorrow
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: Sorrow
+  Preset: 10
+  Values:
+  - RelativePath: face
+    Index: 33
+    Weight: 100
+  - RelativePath: face
+    Index: 37
+    Weight: 100
+  - RelativePath: face
+    Index: 41
+    Weight: 15.6
+  - RelativePath: other
+    Index: 5
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114252973272650046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.LookRight
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: LookRight
+  Preset: 15
+  Values: []
+  MaterialValues: []
+--- !u!114 &114254225916659672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.Neutral
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: Neutral
+  Preset: 1
+  Values: []
+  MaterialValues: []
+--- !u!114 &114264066491643412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690ea0146224b8b4694a1925dddeb352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Meta: {fileID: 114864165224057624}
+--- !u!114 &114274877127131278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.LookUp
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: LookUp
+  Preset: 12
+  Values: []
+  MaterialValues: []
+--- !u!114 &114280199160363182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b678c1df50cfb547990db24a32856da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlendShapeAvatar: {fileID: 114683104459412786}
+--- !u!114 &114341771470105832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843370239414158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_comment: 
+  m_drawGizmo: 0
+  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_stiffnessForce: 0.43
+  m_gravityPower: 0
+  m_gravityDir: {x: 0, y: -1, z: 0}
+  m_dragForce: 0.4
+  m_center: {fileID: 0}
+  RootBones:
+  - {fileID: 4874601820251014}
+  m_hitRadius: 0.01
+  ColliderGroups:
+  - {fileID: 114626138347013846}
+  - {fileID: 114380418409569760}
+  - {fileID: 114675060644083428}
+  - {fileID: 114059941685128048}
+  - {fileID: 114152348592352428}
+  - {fileID: 114820100926004838}
+  - {fileID: 114412845886658622}
+--- !u!114 &114380418409569760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974956983604628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Colliders:
+  - Offset: {x: 0, y: 0, z: 0}
+    Radius: 0.06
+  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
+--- !u!114 &114409786624322984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843370239414158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_comment: 
+  m_drawGizmo: 0
+  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_stiffnessForce: 1
+  m_gravityPower: 0
+  m_gravityDir: {x: 0, y: -1, z: 0}
+  m_dragForce: 0.4
+  m_center: {fileID: 0}
+  RootBones:
+  - {fileID: 4064353452940456}
+  - {fileID: 4603670987831214}
+  - {fileID: 4930325213549758}
+  - {fileID: 4824267585357708}
+  - {fileID: 4451604830956308}
+  - {fileID: 4580868382085730}
+  - {fileID: 4654347611271722}
+  - {fileID: 4837001178330972}
+  - {fileID: 4778376329690964}
+  - {fileID: 4566758131708610}
+  m_hitRadius: 0.02
+  ColliderGroups:
+  - {fileID: 114820100926004838}
+  - {fileID: 114412845886658622}
+--- !u!114 &114412845886658622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070149574922122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Colliders:
+  - Offset: {x: 0, y: 0, z: 0}
+    Radius: 0.06
+  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
+--- !u!114 &114458818146099404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b72334adf6f7948bd98b4f0a873949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawGizmo: 0
+  LeftEye:
+    Transform: {fileID: 4939939814150498}
+    OffsetRotation:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  RightEye:
+    Transform: {fileID: 4611707759788516}
+    OffsetRotation:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  HorizontalOuter:
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveXRangeDegree: 30
+    CurveYRangeDegree: 10
+  HorizontalInner:
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveXRangeDegree: 30
+    CurveYRangeDegree: 10
+  VerticalDown:
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveXRangeDegree: 30
+    CurveYRangeDegree: 10
+  VerticalUp:
+    Curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    CurveXRangeDegree: 30
+    CurveYRangeDegree: 8
+--- !u!114 &114465719711351844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.Blink_R
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: Blink_R
+  Preset: 17
+  Values:
+  - RelativePath: face
+    Index: 27
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114492623147304824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3869812175467a143ab9cd865752b4a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Avatar: {fileID: 90895985163795870}
+  Description: {fileID: 114720354261048952}
+--- !u!114 &114499868816643908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.LookDown
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: LookDown
+  Preset: 13
+  Values: []
+  MaterialValues: []
+--- !u!114 &114500287323066508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843370239414158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_comment: 
+  m_drawGizmo: 0
+  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_stiffnessForce: 1.18
+  m_gravityPower: 0
+  m_gravityDir: {x: 0, y: -1, z: 0}
+  m_dragForce: 0.4
+  m_center: {fileID: 0}
+  RootBones:
+  - {fileID: 4632588446828012}
+  - {fileID: 4191228596437494}
+  m_hitRadius: 0.02
+  ColliderGroups:
+  - {fileID: 114820100926004838}
+  - {fileID: 114412845886658622}
+--- !u!114 &114504506934216918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5596,103 +6089,7 @@ MonoBehaviour:
     Index: 39
     Weight: 100
   MaterialValues: []
---- !u!114 &114152348592352428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1113134648775654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Colliders:
-  - Offset: {x: 0, y: 0, z: 0}
-    Radius: 0.05
-  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114192836682691430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.E
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: E
-  Preset: 5
-  Values:
-  - RelativePath: face
-    Index: 3
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114227128530280018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.O
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: O
-  Preset: 6
-  Values:
-  - RelativePath: face
-    Index: 4
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114241617258385158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.Blink
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: Blink
-  Preset: 7
-  Values:
-  - RelativePath: face
-    Index: 24
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114264066491643412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690ea0146224b8b4694a1925dddeb352, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Meta: {fileID: 114437354839676762}
---- !u!114 &114280199160363182
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b678c1df50cfb547990db24a32856da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlendShapeAvatar: {fileID: 114090081678978628}
---- !u!114 &114318975829534482
+--- !u!114 &114527790323865256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5711,7 +6108,176 @@ MonoBehaviour:
     Index: 26
     Weight: 100
   MaterialValues: []
---- !u!114 &114333298321790612
+--- !u!114 &114550528274384660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.><
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: '><'
+  Preset: 0
+  Values:
+  - RelativePath: face
+    Index: 31
+    Weight: 100
+  - RelativePath: other
+    Index: 1
+    Weight: 100
+  - RelativePath: other02
+    Index: 0
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114569565787630100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
+  m_Name: BlendShape.U
+  m_EditorClassIdentifier: 
+  m_prefab: {fileID: 0}
+  BlendShapeName: U
+  Preset: 4
+  Values:
+  - RelativePath: face
+    Index: 2
+    Weight: 100
+  MaterialValues: []
+--- !u!114 &114626138347013846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1193914797413592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Colliders:
+  - Offset: {x: 0, y: 0.08919573, z: -0.01309633}
+    Radius: 0.097
+  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
+--- !u!114 &114675060644083428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348656090687312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Colliders:
+  - Offset: {x: 0, y: 0.05, z: 0}
+    Radius: 0.09
+  - Offset: {x: 0, y: 0, z: 0}
+    Radius: 0.09
+  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
+--- !u!114 &114683104459412786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329dca3bf78fcdd42b2df941673db76f, type: 3}
+  m_Name: BlendShape
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 114254225916659672}
+  - {fileID: 114900861094180104}
+  - {fileID: 114043927296408836}
+  - {fileID: 114569565787630100}
+  - {fileID: 114182472536299346}
+  - {fileID: 114858013475693988}
+  - {fileID: 114244473061062148}
+  - {fileID: 114092328008779926}
+  - {fileID: 114504506934216918}
+  - {fileID: 114246441841755368}
+  - {fileID: 114972442896605972}
+  - {fileID: 114274877127131278}
+  - {fileID: 114499868816643908}
+  - {fileID: 114784288406883190}
+  - {fileID: 114252973272650046}
+  - {fileID: 114527790323865256}
+  - {fileID: 114465719711351844}
+  - {fileID: 114550528274384660}
+--- !u!114 &114695686641686112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a1a470564f16f4f94acb4b9ef56367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawGizmo: 1
+  UpdateType: 1
+  Target: {fileID: 0}
+  Head:
+    Transform: {fileID: 4142199745182138}
+    OffsetRotation:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_yaw: 0
+  m_pitch: 0
+--- !u!114 &114701237802760738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710290514273660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedba1309bdf12b42af2362f52eea134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstPersonBone: {fileID: 4142199745182138}
+  FirstPersonOffset: {x: 0, y: 0.06, z: 0}
+  Renderers:
+  - Renderer: {fileID: 137319054737070118}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137591987032391012}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137167605976080062}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137536566168356730}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137057140093000128}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137132024752361838}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 137871107533140236}
+    FirstPersonFlag: 0
+--- !u!114 &114720354261048952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6102,37 +6668,7 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
---- !u!114 &114341771470105832
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1843370239414158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_comment: 
-  m_drawGizmo: 0
-  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_stiffnessForce: 0.43
-  m_gravityPower: 0
-  m_gravityDir: {x: 0, y: -1, z: 0}
-  m_dragForce: 0.4
-  m_center: {fileID: 0}
-  RootBones:
-  - {fileID: 4874601820251014}
-  m_hitRadius: 0.01
-  ColliderGroups:
-  - {fileID: 114626138347013846}
-  - {fileID: 114380418409569760}
-  - {fileID: 114675060644083428}
-  - {fileID: 114059941685128048}
-  - {fileID: 114152348592352428}
-  - {fileID: 114820100926004838}
-  - {fileID: 114412845886658622}
---- !u!114 &114366895806981078
+--- !u!114 &114784288406883190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6141,22 +6677,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.I
+  m_Name: BlendShape.LookLeft
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 0}
-  BlendShapeName: I
-  Preset: 3
-  Values:
-  - RelativePath: face
-    Index: 1
-    Weight: 100
+  BlendShapeName: LookLeft
+  Preset: 14
+  Values: []
   MaterialValues: []
---- !u!114 &114380418409569760
+--- !u!114 &114820100926004838
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1974956983604628}
+  m_GameObject: {fileID: 1279914685384630}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
@@ -6166,7 +6699,7 @@ MonoBehaviour:
   - Offset: {x: 0, y: 0, z: 0}
     Radius: 0.06
   m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114395380602519510
+--- !u!114 &114858013475693988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6175,72 +6708,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.><
+  m_Name: BlendShape.O
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 0}
-  BlendShapeName: '><'
-  Preset: 0
+  BlendShapeName: O
+  Preset: 6
   Values:
   - RelativePath: face
-    Index: 31
-    Weight: 100
-  - RelativePath: other
-    Index: 1
-    Weight: 100
-  - RelativePath: other02
-    Index: 0
+    Index: 4
     Weight: 100
   MaterialValues: []
---- !u!114 &114409786624322984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1843370239414158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_comment: 
-  m_drawGizmo: 0
-  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_stiffnessForce: 1
-  m_gravityPower: 0
-  m_gravityDir: {x: 0, y: -1, z: 0}
-  m_dragForce: 0.4
-  m_center: {fileID: 0}
-  RootBones:
-  - {fileID: 4064353452940456}
-  - {fileID: 4603670987831214}
-  - {fileID: 4930325213549758}
-  - {fileID: 4824267585357708}
-  - {fileID: 4451604830956308}
-  - {fileID: 4580868382085730}
-  - {fileID: 4654347611271722}
-  - {fileID: 4837001178330972}
-  - {fileID: 4778376329690964}
-  - {fileID: 4566758131708610}
-  m_hitRadius: 0.02
-  ColliderGroups:
-  - {fileID: 114820100926004838}
-  - {fileID: 114412845886658622}
---- !u!114 &114412845886658622
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1070149574922122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Colliders:
-  - Offset: {x: 0, y: 0, z: 0}
-    Radius: 0.06
-  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114437354839676762
+--- !u!114 &114864165224057624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6265,469 +6743,7 @@ MonoBehaviour:
   OtherPermissionUrl: http://3d.nicovideo.jp/alicia/rule.html
   LicenseType: 8
   OtherLicenseUrl: http://3d.nicovideo.jp/alicia/rule.html
---- !u!114 &114458818146099404
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b72334adf6f7948bd98b4f0a873949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DrawGizmo: 0
-  LeftEye:
-    Transform: {fileID: 4939939814150498}
-    OffsetRotation:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  RightEye:
-    Transform: {fileID: 4611707759788516}
-    OffsetRotation:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  HorizontalOuter:
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    CurveXRangeDegree: 30
-    CurveYRangeDegree: 10
-  HorizontalInner:
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    CurveXRangeDegree: 30
-    CurveYRangeDegree: 10
-  VerticalDown:
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    CurveXRangeDegree: 30
-    CurveYRangeDegree: 10
-  VerticalUp:
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    CurveXRangeDegree: 30
-    CurveYRangeDegree: 8
---- !u!114 &114492623147304824
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3869812175467a143ab9cd865752b4a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Avatar: {fileID: 90014674753510634}
-  Description: {fileID: 114333298321790612}
---- !u!114 &114500287323066508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1843370239414158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ea06e1753e16f4ca870c39c067c86b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_comment: 
-  m_drawGizmo: 0
-  m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_stiffnessForce: 1.18
-  m_gravityPower: 0
-  m_gravityDir: {x: 0, y: -1, z: 0}
-  m_dragForce: 0.4
-  m_center: {fileID: 0}
-  RootBones:
-  - {fileID: 4632588446828012}
-  - {fileID: 4191228596437494}
-  m_hitRadius: 0.02
-  ColliderGroups:
-  - {fileID: 114820100926004838}
-  - {fileID: 114412845886658622}
---- !u!114 &114543254034132296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.Neutral
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: Neutral
-  Preset: 1
-  Values: []
-  MaterialValues: []
---- !u!114 &114567296981649494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.U
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: U
-  Preset: 4
-  Values:
-  - RelativePath: face
-    Index: 2
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114600870270135938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.LookUp
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: LookUp
-  Preset: 12
-  Values: []
-  MaterialValues: []
---- !u!114 &114626138347013846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1193914797413592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Colliders:
-  - Offset: {x: 0, y: 0.08919573, z: -0.01309633}
-    Radius: 0.097
-  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114675060644083428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1348656090687312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Colliders:
-  - Offset: {x: 0, y: 0.05, z: 0}
-    Radius: 0.09
-  - Offset: {x: 0, y: 0, z: 0}
-    Radius: 0.09
-  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114695686641686112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0a1a470564f16f4f94acb4b9ef56367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DrawGizmo: 1
-  UpdateType: 1
-  Target: {fileID: 0}
-  Head:
-    Transform: {fileID: 4142199745182138}
-    OffsetRotation:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_yaw: 0
-  m_pitch: 0
---- !u!114 &114701237802760738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710290514273660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedba1309bdf12b42af2362f52eea134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPersonBone: {fileID: 4142199745182138}
-  FirstPersonOffset: {x: 0, y: 0.06, z: 0}
-  Renderers:
-  - Renderer: {fileID: 137319054737070118}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137591987032391012}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137167605976080062}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137536566168356730}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137057140093000128}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137132024752361838}
-    FirstPersonFlag: 0
-  - Renderer: {fileID: 137871107533140236}
-    FirstPersonFlag: 0
---- !u!114 &114762974826032992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.Blink_R
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: Blink_R
-  Preset: 17
-  Values:
-  - RelativePath: face
-    Index: 27
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114813140200114176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.LookLeft
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: LookLeft
-  Preset: 14
-  Values: []
-  MaterialValues: []
---- !u!114 &114816110771301266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.Sorrow
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: Sorrow
-  Preset: 10
-  Values:
-  - RelativePath: face
-    Index: 33
-    Weight: 100
-  - RelativePath: face
-    Index: 37
-    Weight: 100
-  - RelativePath: face
-    Index: 41
-    Weight: 15.6
-  - RelativePath: other
-    Index: 5
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114820100926004838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279914685384630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646b65a4a57afd34d8c4ed557efb46a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Colliders:
-  - Offset: {x: 0, y: 0, z: 0}
-    Radius: 0.06
-  m_gizmoColor: {r: 1, g: 0, b: 1, a: 1}
---- !u!114 &114843156811075690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.LookDown
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: LookDown
-  Preset: 13
-  Values: []
-  MaterialValues: []
---- !u!114 &114864146647363730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.Joy
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: Joy
-  Preset: 8
-  Values:
-  - RelativePath: face
-    Index: 14
-    Weight: 100
-  - RelativePath: face
-    Index: 25
-    Weight: 100
-  - RelativePath: face
-    Index: 38
-    Weight: 100
-  MaterialValues: []
---- !u!114 &114874717345174066
+--- !u!114 &114900861094180104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6746,23 +6762,7 @@ MonoBehaviour:
     Index: 0
     Weight: 100
   MaterialValues: []
---- !u!114 &114946520140672052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37562b39ff933b245ac2f35d87edbcd6, type: 3}
-  m_Name: BlendShape.LookRight
-  m_EditorClassIdentifier: 
-  m_prefab: {fileID: 0}
-  BlendShapeName: LookRight
-  Preset: 15
-  Values: []
-  MaterialValues: []
---- !u!114 &114970232362015814
+--- !u!114 &114972442896605972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
