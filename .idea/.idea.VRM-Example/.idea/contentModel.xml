@@ -348,6 +348,7 @@
         </e>
         <e p="Resources" t="Include">
           <e p="CharacterController.cs" t="Include" />
+          <e p="VRMLoader.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
