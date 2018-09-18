@@ -11,7 +11,7 @@ public class CharacterController : MonoBehaviour {
 
 	void Start() {
 		_rigidBody = GetComponent<Rigidbody>();
-		_animator = GetComponent<Animator>();
+		_animator = GetComponentInChildren<Animator>();
 	}
 
 	void Update() {
