@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CharacterController : MonoBehaviour {
+public class CharacterController : Photon.MonoBehaviour {
 	public float Speed = 2f;
 	public float Thrust = 100;
 
@@ -15,7 +15,9 @@ public class CharacterController : MonoBehaviour {
 	}
 
 	void Update() {
+		if (!photonView.isMine) return;
 		if (!_onGround) return;
+		
 		CalcMove();
 		CalcJump();
 	}
