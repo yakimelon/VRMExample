@@ -6,12 +6,14 @@ public class CharacterController : Photon.MonoBehaviour {
 
 	private Rigidbody _rigidBody;
 	private Animator _animator;
+	private PhotonTransformView _photonTransformView;
 
 	private bool _onGround;
 
 	void Start() {
 		_rigidBody = GetComponent<Rigidbody>();
 		_animator = GetComponent<Animator>();
+		_photonTransformView = GetComponent<PhotonTransformView>();
 	}
 
 	void FixedUpdate() {
@@ -43,6 +45,9 @@ public class CharacterController : Photon.MonoBehaviour {
 			_animator.SetBool("Running", false);
 			return;
 		}
+		
+		// Photonの位置情報同期処理
+		_photonTransformView.SetSynchronizedValues(_rigidBody.velocity, 0);
         
 		_animator.SetBool("Running", true);
 	}
