@@ -27,10 +27,11 @@ public class VrmLoader : MonoBehaviour {
 	private void SetProperties(GameObject go) {
 		// 角度を設定して、Playerオブジェクトの子にセット
 		go.transform.parent = transform;
+		go.transform.position = new Vector3(0, 0, 0);
 		go.transform.rotation = Quaternion.Euler(0, 180, 0);
 		
 		// アニメーター動的セットし、CharacterControllerを有効化
-		go.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)Instantiate(Resources.Load ("Character"));
+		GetComponent<Animator>().avatar = Instantiate(go.GetComponent<Animator>().avatar);
 		GetComponent<CharacterController>().enabled = true;
 	}
 	

@@ -11,7 +11,7 @@ public class CharacterController : Photon.MonoBehaviour {
 
 	void Start() {
 		_rigidBody = GetComponent<Rigidbody>();
-		_animator = GetComponentInChildren<Animator>();
+		_animator = GetComponent<Animator>();
 	}
 
 	void FixedUpdate() {

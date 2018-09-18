@@ -21,10 +21,12 @@ GameObject:
   - component: {fileID: 4288311999913790}
   - component: {fileID: 54166185020010820}
   - component: {fileID: 136459307920740272}
+  - component: {fileID: 95701094781437574}
   - component: {fileID: 114390538170592224}
+  - component: {fileID: 114257263581728728}
   - component: {fileID: 114151190637555188}
   - component: {fileID: 114240709968405790}
-  - component: {fileID: 114257263581728728}
+  - component: {fileID: 114281658801680362}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -60,6 +62,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!95 &95701094781437574
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700169108673260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 805c43029061041e4b160629c30dab9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114151190637555188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +101,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 114240709968405790}
+  - {fileID: 114281658801680362}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -174,6 +195,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f604183704b9f4c58ae7e26ac4e30035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114281658801680362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700169108673260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: Running
+  - Type: 4
+    SynchronizeType: 1
+    Name: Jumping
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!114 &114390538170592224
 MonoBehaviour:
   m_ObjectHideFlags: 1
