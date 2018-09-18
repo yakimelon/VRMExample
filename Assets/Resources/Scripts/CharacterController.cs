@@ -14,7 +14,7 @@ public class CharacterController : Photon.MonoBehaviour {
 		_animator = GetComponentInChildren<Animator>();
 	}
 
-	void Update() {
+	void FixedUpdate() {
 		if (!photonView.isMine) return;
 		if (!_onGround) return;
 		

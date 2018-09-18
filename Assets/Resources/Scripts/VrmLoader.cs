@@ -26,13 +26,12 @@ public class VrmLoader : MonoBehaviour {
 	// 読み込んだVRMのプロパティ設定を行う
 	private void SetProperties(GameObject go) {
 		// 角度を設定して、Playerオブジェクトの子にセット
-		var player = GameObject.FindGameObjectWithTag("Player");
-		player.GetComponent<CharacterController>().enabled = true;
-		go.transform.parent = player.transform;
+		go.transform.parent = transform;
 		go.transform.rotation = Quaternion.Euler(0, 180, 0);
 		
-		// アニメーター動的セット
+		// アニメーター動的セットし、CharacterControllerを有効化
 		go.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)Instantiate(Resources.Load ("Character"));
+		GetComponent<CharacterController>().enabled = true;
 	}
 	
 	// コルーチンでVRMを読み込む
