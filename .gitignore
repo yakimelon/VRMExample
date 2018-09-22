@@ -43,3 +43,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Firebase
+Assets/google-services.json
+Assets/google-services.json.meta

@@ -7,6 +7,38 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="External" t="Include">
+          <e p="Firebase" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AppDependencies.xml" t="Include" />
+              <e p="AuthDependencies.xml" t="Include" />
+              <e p="DatabaseDependencies.xml" t="Include" />
+              <e p="FirebaseAuth_v5.3.0_manifest.txt" t="Include" />
+              <e p="FirebaseDatabase_v5.3.0_manifest.txt" t="Include" />
+            </e>
+            <e p="m2repository" t="Include">
+              <e p="com" t="Include">
+                <e p="google" t="Include">
+                  <e p="Firebase" t="Include">
+                    <e p="firebase-app-unity" t="Include">
+                      <e p="maven-metadata.xml" t="Include" />
+                    </e>
+                    <e p="firebase-auth-unity" t="Include">
+                      <e p="maven-metadata.xml" t="Include" />
+                    </e>
+                    <e p="firebase-database-unity" t="Include">
+                      <e p="maven-metadata.xml" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Plugins" t="Include">
+              <e p="Http" t="Include">
+                <e p="link.xml" t="Include" />
+              </e>
+              <e p="link.xml" t="Include" />
+            </e>
+          </e>
           <e p="Photon Unity Networking" t="Include">
             <e p="changelog.txt" t="Include" />
             <e p="Editor" t="Include">
@@ -119,6 +151,11 @@
             <e p="ChatState.cs" t="Include" />
             <e p="ChatUserStatus.cs" t="Include" />
             <e p="IChatClientListener.cs" t="Include" />
+          </e>
+          <e p="PlayServicesResolver" t="Include">
+            <e p="Editor" t="Include">
+              <e p="play-services-resolver_v1.2.88.0.txt" t="Include" />
+            </e>
           </e>
           <e p="VRM" t="Include">
             <e p="LICENSE.txt" t="Include" />
@@ -461,6 +498,11 @@
           </e>
         </e>
         <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="Firebase" t="Include">
+              <e p="AndroidManifest.xml" t="Include" />
+            </e>
+          </e>
           <e p="Photon3Unity3D.xml" t="Include" />
           <e p="release_history.txt" t="Include" />
           <e p="WebSocket" t="Include">
@@ -471,7 +513,9 @@
           <e p="Scripts" t="Include">
             <e p="CharacterController.cs" t="Include" />
             <e p="OnlineManager.cs" t="Include" />
+            <e p="SignIn.cs" t="Include" />
             <e p="VRMLoader.cs" t="Include" />
+            <e p="VrmUrl.cs" t="Include" />
           </e>
         </e>
       </e>

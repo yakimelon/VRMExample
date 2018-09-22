@@ -15,8 +15,9 @@ public class VrmLoader : MonoBehaviour {
 
 	// WebからVRMを読み込む
 	private void LoadVrmForWeb() {
-		var path = "https://s3-ap-northeast-1.amazonaws.com/vrm-list/okijo.vrm";
-
+//		var path = "https://s3-ap-northeast-1.amazonaws.com/vrm-list/okijo.vrm";
+		var path = "https://firebasestorage.googleapis.com/v0/b/vrmuploader.appspot.com/o/vrm%2F165fe46d85449.vrm?alt=media&token=588d3c05-38e4-484b-853b-2343ec3c9122";
+		
 		StartCoroutine(LoadVrmCoroutine(path, go =>
 		{
 			SetProperties(go);

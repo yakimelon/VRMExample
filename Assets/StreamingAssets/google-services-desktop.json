@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "245373078428",
+    "firebase_url": "https://vrmuploader.firebaseio.com",
+    "project_id": "vrmuploader",
+    "storage_bucket": "vrmuploader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245373078428:android:710af21534e18d0d",
+        "android_client_info": {
+          "package_name": "jp.co.techconnect.vrm_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245373078428-20cog0ih0uo8ehh1o703vamd8vtutl1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSCyTi0DTi7-WIL5OKizU9kaeXkp8auU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
