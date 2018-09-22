@@ -513,7 +513,9 @@
           <e p="Scripts" t="Include">
             <e p="CharacterController.cs" t="Include" />
             <e p="OnlineManager.cs" t="Include" />
-            <e p="SignIn.cs" t="Include" />
+            <e p="SignIn" t="Include">
+              <e p="ExecSignIn.cs" t="Include" />
+            </e>
             <e p="VRMLoader.cs" t="Include" />
             <e p="VrmUrl.cs" t="Include" />
           </e>

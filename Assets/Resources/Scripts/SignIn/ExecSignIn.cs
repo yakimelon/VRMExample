@@ -1,12 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Unity.Editor;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class SignIn : MonoBehaviour {
+public class ExecSignIn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -26,29 +29,31 @@ public class SignIn : MonoBehaviour {
 //					Debug.Log("Read: "+ url);
 //				}
 //			});
+	}
 
-		// TODO: Auth
-		FirebaseAuth.DefaultInstance.SignInWithEmailAndPasswordAsync("b@example.com", "testtest").ContinueWith(
+	// サインイン処理を実行
+	public void OnClick() {
+		string email = GameObject.FindGameObjectWithTag("Email").GetComponent<Text>().text;
+		string pass = GameObject.FindGameObjectWithTag("Pass").GetComponent<Text>().text;
+		
+		FirebaseAuth.DefaultInstance.SignInWithEmailAndPasswordAsync(email, pass).ContinueWith(
 			task => {
 				if (task.IsCanceled) {
-					Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
+					Debug.LogError("サインインがキャンセルされた");
 					return;
 				}
 
 				if (task.IsFaulted) {
-					Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+					Debug.LogError("サインイン失敗: " + task.Exception);
 					return;
 				}
 
-				// Firebase user has been created.
-				Firebase.Auth.FirebaseUser newUser = task.Result;
+				// サインイン成功
+				FirebaseUser newUser = task.Result;
 				Debug.LogFormat("Firebase user created successfully: {0} ({1})",
 					newUser.DisplayName, newUser.UserId);
+				
+				SceneManager.LoadSceneAsync("OnlineMain");
 			});
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
