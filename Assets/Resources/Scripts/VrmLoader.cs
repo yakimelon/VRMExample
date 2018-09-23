@@ -1,10 +1,17 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
+using Firebase.Unity.Editor;
 using UnityEngine;
 
 public class VrmLoader : MonoBehaviour {
+	private string _userId;
+	
 	void Start() {
+		_userId = FirebaseAuth.DefaultInstance.CurrentUser.UserId;
 		LoadVrmForWeb();
+		
 	}
 
 	// ローカルからVRMを読み込む
@@ -13,15 +20,28 @@ public class VrmLoader : MonoBehaviour {
 		return VRM.VRMImporter.LoadFromPath(path);
 	}
 
-	// WebからVRMを読み込む
+	// FirebaseからVRMを読み込む
 	private void LoadVrmForWeb() {
-//		var path = "https://s3-ap-northeast-1.amazonaws.com/vrm-list/okijo.vrm";
-		var path = "https://firebasestorage.googleapis.com/v0/b/vrmuploader.appspot.com/o/vrm%2F165fe46d85449.vrm?alt=media&token=588d3c05-38e4-484b-853b-2343ec3c9122";
-		
-		StartCoroutine(LoadVrmCoroutine(path, go =>
-		{
-			SetProperties(go);
-		}));
+		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://vrmuploader.firebaseio.com/");
+		FirebaseDatabase.DefaultInstance
+			.GetReference("vrms")
+			.GetValueAsync().ContinueWith(task=>{
+				if(task.IsFaulted){
+					Debug.LogError("読み込み失敗");
+				}
+				else if(task.IsCompleted){
+					DataSnapshot snapshot = task.Result;
+
+					string json = snapshot.Child(_userId).GetRawJsonValue();
+					string url = JsonUtility.FromJson<VrmUrl>(json).url;
+					Debug.Log("Read: "+ url);
+					
+					StartCoroutine(LoadVrmCoroutine(url, go =>
+					{
+						SetProperties(go);
+					}));
+				}
+			});
 	}
 
 	// 読み込んだVRMのプロパティ設定を行う

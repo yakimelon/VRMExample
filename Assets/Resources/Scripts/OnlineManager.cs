@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Firebase.Auth;
 using UnityEngine;
 
 public class OnlineManager : MonoBehaviour {
@@ -31,9 +32,5 @@ public class OnlineManager : MonoBehaviour {
 			Quaternion.Euler(0, 180, 0), 
 			0
 		);
-	}
-	
-	void Update () {
-		
 	}
 }
