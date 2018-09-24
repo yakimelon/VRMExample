@@ -11,7 +11,6 @@ public class VrmLoader : MonoBehaviour {
 	void Start() {
 		_userId = FirebaseAuth.DefaultInstance.CurrentUser.UserId;
 		LoadVrmForWeb();
-		
 	}
 
 	// ローカルからVRMを読み込む
