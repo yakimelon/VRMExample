@@ -1,7 +1,8 @@
 # VRM-Example
 
 VRMのサンプル。
-[ここ](https://yakimelon.github.io/VrmUploaderExampleForWeb/html/index.html) でアップロードしたアバターが Unity 上で表示される。
+[ここ](https://yakimelon.github.io/VrmUploaderExampleForWeb/html/index.html) でアップロードしたアバターが Unity 上で表示される。  
+※ 現状はつながらない
 
 ![gif1](https://i.gyazo.com/15091f7aece065c29b52fb0b0430a813.png)
 
